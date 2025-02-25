@@ -15,6 +15,6 @@ class AICore:
         return f"Prediction for {data}: 42"  # Заглушка для передбачення
 
     def status(self):
-        my_status = self.load_model(self) # try to load model
-        print(f{my_status=})
+        my_status = self.load_model() # try to load model
+        print(f"{my_status=}")
         return "Ready" if self.ready else "Not Ready"
